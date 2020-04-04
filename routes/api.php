@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('login','API\LoginController@login')->name('login');// user login
+Route::post('register','API\RegisterController@register')->name('register');// user registeration

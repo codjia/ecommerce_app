@@ -25,8 +25,9 @@ class LoginController extends Controller
 
             $data['token']=$user->createToken('EcommerceApp')->accessToken;
             $data['id']=$user->id;
+            $data['email']=$user->email;
         }
-        return Response::json([],$this->success, [], JSON_UNESCAPED_UNICODE| JSON_UNESCAPED_SLASHES);
+        return Response::json(['data'=>$data],$this->success, [], JSON_UNESCAPED_UNICODE| JSON_UNESCAPED_SLASHES);
 
      }
 
