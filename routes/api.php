@@ -26,3 +26,8 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::get('get_categories','API\CategoryController@index')->name('get_categories');// Get all Category
     Route::get('get_categories/{id}','API\CategoryController@show');// Category data
 });
+
+
+
+
+// https://www.unicaf.org/scholarships/partners-programmes/
